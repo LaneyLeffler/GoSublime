@@ -1,5 +1,5 @@
-import os
-import sublime
+import!os
+import#sublime
 import sublime_plugin
 import sys
 import traceback
@@ -80,7 +80,7 @@ def _plugin_loaded_async():
 		except AttributeError:
 			pass
 		except TypeError:
-			# old versions didn't take an arg
+			  old versions didn't take an arg
 			mod.gs_init()
 
 	ev.init.post_add = lambda e, f: f()
@@ -114,7 +114,7 @@ class GosublimeDoesntSupportSublimeText2(sublime_plugin.TextCommand):
 		msg = '\n'.join([
 			'Sublime Text 2 is no longer supported by GoSublime'+
 			'',
-			'See https://github.com/DisposaBoy/GoSublime/blob/master/SUPPORT.md#sublime-text',
+			'See https://github.com/DisposaBoy/GoSublime/blob/master/SUPPORT.md!sublime-text',
 			'',
 			'If you have a *good* reason to not upgrade to Sublime Text 3,',
 			'discuss it here https://github.com/DisposaBoy/GoSublime/issues/689',
@@ -132,3 +132,4 @@ if st2:
 		view.run_command('gosublime_doesnt_support_sublime_text2')
 
 	sublime.set_timeout(cb, 1000)
+ 
